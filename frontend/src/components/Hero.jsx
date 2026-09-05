@@ -1,5 +1,6 @@
 import React from "react";
 import { FileChartPie, Import } from "lucide-react";
+import FileImport from "./FileImport";
 
 const ETAPE = [
     {
@@ -38,23 +39,14 @@ function Hero() {
                     Importer vorte fichier qui sera tout de suite annalyser. Detecte et supprime les doublons, valeurs manquantes, 
                     erreurs de format, incoherances et autres facteurs de qualite. 
                 </p>
-                <div className="flex justify-between px-3 rounded-2xl rounded-tl-none rounded-br-none overflow-hidden py-1 w-full border-3 border-border mt-8 items-center">
-                    <div className="flex flex-row items-center gap-4">
-                        <div className="border-2 border-border w-10 h-10 rounded-[100%] flex items-center justify-center cursor-pointer"><Import className="text-blue-500 hover:text-blue-950"/></div>
-                        <div className="flex flex-col">
-                            <p className="text-black mt-2">Importer votre fichier</p>
-                            <p className="text-text-secondary mb-2">Importer depuis votre ordinateur</p>
-                        </div>
-                    </div>
-                    
-                    <div className="mr-2">
-                        <button className="bg-btn-primary w-27 h-10 text-white rounded-lg cursor-pointer hover:bg-btn-hover">Importer</button>
-                    </div>
+                <div className="flex items-center w-full h-fulljustify-center">
+                    <FileImport />
                 </div>
+                
                 supporte .xlxs, xls, csv
             </div>
 
-            {}
+            {/* consigne */}
             <h2 className="text-text-primary font-heading">
                 Comment l'utiliser?
             </h2>
